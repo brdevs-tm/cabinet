@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Khamidov Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/style.css"
+    />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <video autoplay muted loop id="video-background">
+      <source src="assets/login__bg__anim.mp4" type="video/mp4" />
+    </video>
+
+    <div class="login__box">
+      <h2 style="color: white">Login Form</h2>
+      <hr />
+      <form action="login__form" id="login__form">
+        <div class="inpWrapp uName">
+          <input type="text" id="userName" required />
+          <label for="userName" class="uNamePlaceholder">Username</label>
+        </div>
+        <div class="inpWrapp uPass">
+          <input type="password" id="userPassword" required />
+          <label for="userPassword" class="PassPlaceholder">Password</label>
+        </div>
+        <div class="rememberring">
+          <input
+            type="checkbox"
+            name="Remember"
+            id="Remember"
+            class="chckRemembering"
+          />
+          <label for="Remember">Remember me</label>
+        </div>
+        <button type="submit" class="submitBtn">Login</button>
+        <div class="forgot__pass">
+          <a href="#">Forgot password?</a>
+        </div>
+        <div class="or">
+          <div class="line1"></div>
+          <span>OR</span>
+          <div class="line2"></div>
+        </div>
+        <div class="log__by">
+          <a href="httpsaccounts.google.com"
+            ><img src="assets/icons/google.svg" alt="by ggogle" /></a
+          ><a href="fb.com"><img src="assets/icons/fb.svg" alt="fb" /></a
+          ><a href="github.com"
+            ><img src="assets/icons/github.svg" alt="by github"
+          /></a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
